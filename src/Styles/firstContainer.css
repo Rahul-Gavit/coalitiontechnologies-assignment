@@ -1,0 +1,99 @@
+
+/* Mobile-first responsive design */
+.first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../assets/mountain1.png);
+    background-size: cover;
+    width: 100%;
+    height: auto; /* Adjusted height for responsiveness */
+    min-height: 700px; /* Minimum height to ensure content is visible */
+    background-color: red;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Change to flex-end for better spacing on small screens */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.nav-container a {
+    font-style: italic;
+    color: #fff;
+    padding: 10px; /* Adjust padding for better spacing on small screens */
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout for small screens */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center align text */
+}
+
+.info-container h1 {
+    padding: 10px; /* Add padding for better spacing */
+    font-size: 3rem; /* Adjust font size for small screens */
+}
+
+.mount-h1 {
+    color: #555555;
+}
+
+.mount-hh1 {
+    color: #181950;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout for small screens */
+    align-items: center;
+    justify-content: center; /* Center align items vertically on small screens */
+    background-color: #fff;
+}
+
+.bottom-container h1 {
+    font-size: 1rem;
+}
+
+.bottom-container a {
+    font-style: italic;
+    color: #555555;
+    padding: 10px; /* Adjust padding for better spacing */
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    .first-container {
+        min-height: 700px; /* Reset minimum height for larger screens */
+    }
+
+    .nav-container {
+        justify-content: flex-end; /* Restore original justification for larger screens */
+        padding: 15px 20px; /* Restore original padding */
+    }
+
+    .info-container {
+        flex-direction: row; /* Change back to row layout for larger screens */
+        text-align: left; /* Restore original text alignment */
+    }
+
+    .info-container h1 {
+        font-size: 6rem; /* Restore original font size for larger screens */
+    }
+
+    .bottom-container {
+        flex-direction: row; /* Change back to row layout for larger screens */
+        justify-content: space-around; /* Restore original justification */
+    }
+
+    .bottom-container h1 {
+        font-size: 1rem; /* Restore original font size for larger screens */
+    }
+
+    .bottom-container a {
+        padding: 15px 20px; /* Restore original padding */
+    }
+}

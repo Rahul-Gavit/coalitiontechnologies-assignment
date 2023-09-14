@@ -1,0 +1,125 @@
+/* .third-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../assets/mount2.jpg);
+    background-size: cover;
+    height: 700px;
+}
+
+.thr-nav-container{
+    display: flex;
+    align-items: center;
+    background-color:#8a8a9e
+}
+.thr-nav-container a{
+    color: #181950;
+    padding: 15px 10px;
+}
+.thr-nav-container a:hover{
+    background-color: #696980;
+}
+
+
+.card-container{
+    width:max-content;
+    margin-left: 100px;
+    padding: 40px;
+    border-radius: 5px;
+    opacity: 80%;
+    background-color: #fff;
+}
+.card-container table td{
+    padding: 10px;
+}
+
+.sec-bottom-container{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background-color: #8a8a9e;
+}
+
+.sec-bottom-container h1{
+    padding: 0 10px;
+    font-size: 1rem;
+} */
+
+
+/* Default styles for .third-container */
+.third-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../assets/mountain3.jpg);
+    background-size: cover;
+    height: 700px;
+}
+
+/* Styles for .thr-nav-container */
+.thr-nav-container {
+    display: flex;
+    align-items: center;
+    background-color: #8a8a9e;
+}
+.thr-nav-container a {
+    color: #181950;
+    padding: 15px 10px;
+}
+.thr-nav-container a:hover {
+    background-color: #696980;
+}
+
+/* Styles for .card-container */
+.card-container {
+    width: max-content;
+    margin-left: 100px;
+    padding: 40px;
+    border-radius: 5px;
+    opacity: 80%;
+    background-color: #fff;
+}
+.card-container table td {
+    padding: 10px;
+}
+
+/* Styles for .sec-bottom-container */
+.sec-bottom-container {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background-color: #8a8a9e;
+}
+.sec-bottom-container h1 {
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .third-container {
+        height: auto; /* Adjust the height for smaller screens */
+    }
+
+    .thr-nav-container {
+        flex-direction: column; /* Stack the navigation links vertically */
+        align-items: flex-start; /* Align navigation links to the left */
+    }
+
+    .thr-nav-container a {
+        padding: 10px 20px; /* Adjust the padding for smaller screens */
+    }
+
+    .card-container {
+        margin: 20px;
+        width: 100%; /* Make the card container full width */
+        padding: 20px; /* Adjust the padding for smaller screens */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+
+    .sec-bottom-container {
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Align the content to the center */
+        height: auto; /* Adjust the height for smaller screens */
+    }
+}

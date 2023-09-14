@@ -1,0 +1,70 @@
+
+/* Mobile-first responsive design */
+.second-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../assets/mountain2.jpg);
+    background-size: cover;
+    height: auto; /* Adjusted height for responsiveness */
+    min-height: 700px; /* Minimum height to ensure content is visible */
+}
+
+.sec-info-container {
+    display: flex;
+    flex-direction: column; /* For small screens, change to column layout */
+    align-items: center;
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center align text */
+}
+
+.view-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row on small screens */
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Reduce padding for smaller screens */
+    background-color: #fff;
+}
+
+.view-container p {
+     margin: 5px; /* Adjust margin for better spacing on small screens */
+}
+
+.second-container strong {
+    font-size: 30px; /* Reduce font size for small screens */
+    color: #555;
+}
+
+.second-container h2 {
+    margin: 10px 0; /* Adjust margin for better spacing on small screens */
+    color: #181950;
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    .second-container {
+        min-height: 700px; /* Reset minimum height for larger screens */
+    }
+
+    .sec-info-container {
+        flex-direction: row; /* Change back to row layout for larger screens */
+    }
+
+    .view-container {
+        padding: 0; /* Remove or adjust padding for larger screens */
+        height: auto; /* Allow height to adjust to content */
+    }
+
+    .second-container strong {
+        font-size: 70px; /* Restore original font size for larger screens */
+    }
+
+    .second-container h2 {
+        margin: 0; /* Reset margin for larger screens */
+    }
+}
+
+
+
